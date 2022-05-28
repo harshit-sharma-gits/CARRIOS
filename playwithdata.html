@@ -17,12 +17,57 @@
             </a>
         </div>
         <div class="selected">Play with data</div>
+        <div>
+            <a href="about.html">
+                About
+            </a>
+        </div>
     </div>
 
     <div class="playArea">
-        <div></div>
-        <div></div>
+        <div>
+
+            <form method="post" id="playForm">
+                <label for="plot">What you want to plot with Car Variant!?</label>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+                <select name="plot" id="plot" style="width: 400px;">
+                    <option value="temp">Choose Specification</option>
+                    <option value="1">ARAI-Certified Mileage</option>
+                    <option value="2">Boot Space</option>
+                    <option value="3">Displacement (cc)</option>
+                    <option value="4">Fuel Tank Capacity</option>
+                    <option value="5">City Mileage</option>
+                    <option value="6">Seat Capacity</option>
+                </select>
+
+                &emsp;
+
+                <input type="submit" value="Get your results!" id="btn">
+            </form>
+
+        </div>
+
+        <div>
+            <div id="play1">
+                <p>Please Select Your Specification!</p>
+                <center>
+                    <img src="res/confused.gif" height="300px" alt="Please Select Your Specification" style="transform: translateY(-100px);">
+                </center>
+            </div>
+            <div id="play2">
+                <iframe id="playFrame" title="REPORT" width="1000" height="550" frameborder="0" allowFullScreen="false"></iframe>
+            </div>
+        </div>
     </div>
 
+    <div class="footer" id="foot">
+        <center>
+            Made with ❤ by <a href="https://linktr.ee/sharmaharshit" target="_blank">Harshit Sharma</a>
+        </center>
+    </div>
+
+    <script src="script/pldata.js"></script>
 </body>
 </html>

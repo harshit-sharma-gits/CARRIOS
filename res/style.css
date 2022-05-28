@@ -18,7 +18,6 @@
 
 body {
     margin: 0px;
-    background-color: rgb(250, 250, 250);
 }
 
 .navbar {
@@ -28,7 +27,7 @@ body {
     height: 60px;
     position: top;
     display: grid;
-    grid-template-columns: 150px 230px;
+    grid-template-columns: 150px 230px 150px;
 }
 
 .navbar div {
