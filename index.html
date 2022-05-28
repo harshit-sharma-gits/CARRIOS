@@ -11,28 +11,58 @@
     
     <div class="navbar">
         <div class="selected">Home</div>
-        <div>TEMP</div>
+        <div>Play with data</div>
     </div>
 
     <div class="landingArea">
         <div class="logoArea">
             <center>
                 <img src="res/engage.jpg" alt="LOGO" style="width: 400px; margin-top: 60px;">
-                <p style="font-size: 35px; margin-top: 40px;">HELLO WORLD</p>
+                <p style="font-size: 40px; font-weight: bold; margin-top: 40px;">TRIP CAR</p>
             </center>
         </div>
         <div class="statementArea">
-            <h1 style="font-size: 35px;">PROBLEM STATEMENT</h1>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Eligendi maxime ipsam beatae optio quo provident quidem aut cumque non sequi deleniti
-            hic incidunt culpa quis, quasi omnis necessitatibus perferendis ab.
+            <h1 style="font-size: 35px;">Choose the best car for your trip</h1>
+            <p>
+                Harness the power of Data Analysis to select the best car for your Trip 
+                with your friends!
+            </p>
         </div>
     </div>
 
     <div class="queryArea">
-        <div>FORM</div>
-        <div>PUSSY</div>
+        <div class="formArea">
+            <h1 style="font-size: 30px;">Tell us your needs!</h1>
+            <br><br>
+
+            <form style="font-size: 19px;" method="post" id="displayForm">
+
+                <select name="journeyType" id="journeyType" style="width: 400px;">
+                    <option value="temp">Choose Trip Distance</option>
+                    <option value="1">&lt; 50,000 KMS</option>
+                    <option value="2">50,000 - 1,00,000 KMS</option>
+                    <option value="3">&gt; 1,00,000 KMS</option>
+                </select>
+                <br><br><br>
+                <select name="priceRange" id="priceRange" style="width: 400px;">
+                    <option value="temp">Choose Seating Capacity</option>
+                    <option value="1">&lt;= 5</option>
+                    <option value="2">&gt; 5</option>
+                </select>
+                <br><br><br>
+                <input type="submit" value="Get your results!">
+
+            </form>
+        </div>
+        <div class="displayArea">
+            <div id="number1">Please Select your Preferences!</div>
+            <div id="number2">
+                <iframe id="iFrame" title="REPORT" width="600" height="300" frameborder="0" allowFullScreen="false"></iframe>
+            </div>
+        </div>
     </div>
 
+    
+    <script src="script/index.js"></script>
 </body>
 </html>

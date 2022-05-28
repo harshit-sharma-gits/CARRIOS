@@ -3,6 +3,7 @@
 * {
     font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -12,7 +13,7 @@
     background: #bebebe;
   }
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 238, 0);
+    background: rgb(255, 208, 0);
   }
 
 body {
@@ -25,7 +26,7 @@ body {
     height: 60px;
     position: top;
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 150px 230px;
 }
 
 .navbar div {
@@ -35,12 +36,12 @@ body {
 }
 
 .navbar div:hover {
-    background-color: rgb(255, 243, 75);
+    background-color: rgb(255, 241, 45);
     cursor:pointer;
 }
 
 .navbar .selected{
-    background-color: rgb(255, 243, 75);
+    background-color: rgb(255, 241, 45);
 }
 
 .landingArea {
@@ -59,4 +60,27 @@ body {
     padding: 80px;
     padding-left: 50px;
     padding-right: 100px;
+}
+
+.queryArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+}
+
+.queryArea .formArea {
+    padding: 50px;
+}
+
+.queryArea .displayArea {
+    padding: 50px;
+    padding-left: 0px;
+}
+
+#number1 {
+    display: block;
+}
+
+#number2 {
+    display: none;
 }
