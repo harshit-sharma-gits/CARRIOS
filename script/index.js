@@ -4,12 +4,11 @@ form.addEventListener('submit', (event) => {
 
     var jT = document.getElementById('journeyType');
     var jtID = jT.value;
-
-    console.log(jtID);
+    // console.log(jtID);
 
     var pr = document.getElementById('priceRange');
     var prID = pr.value;
-    console.log(prID);
+    // console.log(prID);
 
     if (jtID == "temp" && prID == "temp") {
         document.getElementById('number1').style.display = "block";

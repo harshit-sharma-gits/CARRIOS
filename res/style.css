@@ -10,7 +10,7 @@
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #bebebe;
+    background: #dbdbdb;
   }
   ::-webkit-scrollbar-thumb {
     background: rgb(255, 208, 0);
@@ -18,10 +18,12 @@
 
 body {
     margin: 0px;
+    background-color: rgb(250, 250, 250);
 }
 
 .navbar {
     background-color: rgb(231, 231, 231);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     width: 100%;
     height: 60px;
     position: top;
@@ -37,11 +39,16 @@ body {
 
 .navbar div:hover {
     background-color: rgb(255, 241, 45);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .navbar .selected{
     background-color: rgb(255, 241, 45);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
 }
 
 .landingArea {
@@ -62,9 +69,16 @@ body {
     padding-right: 100px;
 }
 
+hr {
+    width: 75%;
+    border: 4px solid rgb(255, 241, 45);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
 .queryArea {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.4fr;
     height: 600px;
 }
 
@@ -72,8 +86,36 @@ body {
     padding: 50px;
 }
 
-.queryArea .displayArea {
+.queryArea .formArea .formBox {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     padding: 50px;
+    padding-top: 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.queryArea .formArea .formBox #journeyType {
+    height: 40px;
+}
+
+.queryArea .formArea .formBox #priceRange {
+    height: 40px;
+}
+
+.queryArea .formArea .formBox #btn {
+    width: 220px;
+    height: 35px;
+    background-color: rgb(255, 241, 45);
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.queryArea .formArea .formBox #btn:hover {
+    cursor: pointer;
+}
+
+.queryArea .displayArea {
+    padding-top: 50px;
     padding-left: 0px;
 }
 
@@ -83,4 +125,14 @@ body {
 
 #number2 {
     display: none;
+}
+
+.footer {
+    background-color: rgb(255, 241, 45);
+    height: 60px;
+    padding-top: 25px;
+}
+
+.footer a {
+    text-decoration: none;
 }
