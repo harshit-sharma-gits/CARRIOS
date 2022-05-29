@@ -57,7 +57,7 @@ body {
 
 .landingArea {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     margin-top: 20px;
     width: 100%;
     height: 540px;
