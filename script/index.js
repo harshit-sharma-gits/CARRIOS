@@ -4,18 +4,16 @@ form.addEventListener('submit', (event) => {
 
     var jT = document.getElementById('journeyType');
     var jtID = jT.value;
-    // console.log(jtID);
 
     var pr = document.getElementById('priceRange');
     var prID = pr.value;
-    // console.log(prID);
 
     if (jtID == "temp" && prID == "temp") {
         document.getElementById('number1').style.display = "block";
         document.getElementById('number2').style.display = "none";
     }
     else if (jtID == "temp" || prID == "temp") {
-        alert('bhkk madarchod');
+        alert('Please Select on both Fields!');
     }
     else {
 
