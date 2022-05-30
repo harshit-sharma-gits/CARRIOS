@@ -1,3 +1,8 @@
+<!-- 
+    The add on functionality for the application 'Play with Data'
+    Can be accesse here : https://harshit-sharma-gits.github.io/CARRIOS/playwithdata.html
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +10,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play With Data</title>
+
+    <!------ Importing stylesheest and favicon ------->
     <link rel="stylesheet" href="res/style.css">
     <link rel="stylesheet" href="res/pldata.css">
     <link rel="icon" type="image/x-icon" href="res/favicon.png">
 </head>
+
 <body>
     
+    <!---------------- Navigation bar ---------------->
+
     <div class="navbar">
         <div>
             <a href="index.html">
@@ -25,8 +35,23 @@
         </div>
     </div>
 
+    <!------------------------------------------------>
+
     <div class="playArea">
         <div>
+
+            <!-- 
+                This area contains the dropdown which lets the user choose whatever
+                he/she wants to plot against the Car Variants, it provides
+                the following options :-
+
+                * ARAI-Certified Mileage
+                * Boot Space
+                * Displacement (cc)
+                * Fuel Tank Capacity
+                * City Mileage
+                * Seat Capacity
+             -->
 
             <form method="post" id="playForm">
                 <label for="plot">What you want to plot with Car Variant!?</label>
@@ -50,6 +75,12 @@
 
         </div>
 
+        <!-- 
+            Again the same approach is followed to show the user the data he/she has
+            chosen, the chosen data is sent to a function present in 'pldata.js'
+            in which further processing takes places
+         -->
+
         <div>
             <div id="play1">
                 <center>
@@ -65,12 +96,23 @@
         </div>
     </div>
 
+    <!-- 
+        Again the nice looking footer is placed ;)
+     -->
+
     <div class="footer" id="foot">
         <center>
             Made with ❤ by <a href="https://linktr.ee/sharmaharshit" target="_blank">Harshit Sharma</a>
         </center>
     </div>
 
+    <!-- Importing 'pldata.js' for  -->
+
     <script src="script/pldata.js"></script>
+
 </body>
 </html>
+
+<!-- 
+    END OF 'playwithdata.html'
+ -->

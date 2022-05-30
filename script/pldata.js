@@ -1,9 +1,14 @@
+// Object to get the form data from 'playwithdata.js'
 const form  = document.getElementById('playForm');
 
+// Function which is triggered upon submitting the form
 form.addEventListener('submit', (event) => {
 
+    // Getting the value of the dropdown and storing it to 'plID'
     var pl = document.getElementById('plot');
     var plID = pl.value;
+
+    // Now 'plID' is manipulated to get the desired output
 
     if (plID == "temp") {
         document.getElementById('play1').style.display = "block";
@@ -37,9 +42,14 @@ form.addEventListener('submit', (event) => {
         document.getElementById('play1').style.display = "none";
         document.getElementById('play2').style.display = "block";
 
+        // Here the footer is also set to be displayed after the graph
+        // previously it was set to be shown in the foot of the screen
+
         document.getElementById('foot').style.marginTop = "50px";
         document.getElementById('foot').style.position = "relative";
     }
 
     event.preventDefault();
 });
+
+// END OF 'pldata.js'

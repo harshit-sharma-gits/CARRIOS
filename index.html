@@ -1,15 +1,27 @@
+<!-- 
+    The Home page of the application
+    Can be accessed here : https://harshit-sharma-gits.github.io/CARRIOS/
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARRIOS</title>
+
+    <!------- Importing stylesheet and favicon ------->
     <link rel="stylesheet" href="res/style.css">
     <link rel="icon" type="image/x-icon" href="res/favicon.png">
+
 </head>
+
 <body>
     
+    <!---------------- Navigation bar ---------------->
+
     <div class="navbar">
         <div class="selected">Home</div>
         <div>
@@ -23,6 +35,11 @@
             </a>
         </div>
     </div>
+
+    <!------------------------------------------------>
+
+
+    <!-- Area containing Logo and Short Description -->
 
     <div class="landingArea">
         <div class="logoArea">
@@ -48,9 +65,30 @@
         </div>
     </div>
 
+    <!------------------------------------------------>
+
     <hr><br>
 
+    <!--
+        * Query Area for the user to interact with
+
+        * Consists of a form, which takes the preferences from the user
+          and then calls to a function present in 'index.js' for
+          further processing to take place
+
+        * Then there is display area, where the output is shown as per the choice
+          made by the user :-
+          - If the dropdowns are left empty, it shows a nice animation with a text
+            'Please select your preferences'
+          - If one of the dropdown is left empty, it creates an alert saying
+            'Please select on both boxes'
+          - Elsewise (when a valid choice is made) it shows the respective graph
+    -->
+
     <div class="queryArea">
+
+        <!---------- Form to take user input ------------->
+
         <div class="formArea">
             <div class="formBox">
                 <h1 style="font-size: 30px;">Tell us your needs!</h1>
@@ -76,6 +114,20 @@
                 </form>
             </div>
         </div>
+
+        <!------------------------------------------------>
+
+        <!--
+            Area to display as per the choices made by user
+
+            Approach followed for displaying :
+            * Both the 'Please select your preference' division, and the PowerBI embed
+              are present simultaneously
+            * 'display' property of CSS is used here, whatever is needed to displayed to
+              the user is given the value 'block' to its 'display' property, and whatever
+              is needed to be hidden is given the value 'none'
+        -->
+
         <div class="displayArea">
             <div id="number1">
                 <center>
@@ -89,7 +141,15 @@
                 <iframe id="iFrame" title="REPORT" width="700" height="450" frameborder="0" allowFullScreen="false"></iframe>
             </div>
         </div>
+
+        <!------------------------------------------------>
+
     </div>
+
+    <!-- 
+        A Nice footer which gives the Application a worth of its UI
+        PS: My name redirects to my linktree, where all my user handles are present ;)
+    -->
 
     <div class="footer">
         <center>
@@ -97,6 +157,16 @@
         </center>
     </div>
 
+    <!--
+        The JavaScript file is imported here which contains the function that is 
+        triggered when user submits the form, and all variation in CSS property is
+        handled there
+    -->
     <script src="script/index.js"></script>
+
 </body>
 </html>
+
+<!--
+    END OF 'index.html'
+-->

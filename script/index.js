@@ -1,20 +1,32 @@
+// Object to get the form data from 'index.js'
 const form  = document.getElementById('displayForm');
 
+// Function which is triggered upon submitting the form
 form.addEventListener('submit', (event) => {
 
+    // Getting the values of the dropdowns, selected by the user
+    // and storing it into 'jtID' and 'prID'
+    
     var jT = document.getElementById('journeyType');
     var jtID = jT.value;
 
     var pr = document.getElementById('priceRange');
     var prID = pr.value;
 
+    // now manipulating 'jtID' & 'prID' to get the desired output
+
+    // If user hasn't selected anything
     if (jtID == "temp" && prID == "temp") {
         document.getElementById('number1').style.display = "block";
         document.getElementById('number2').style.display = "none";
     }
+
+    // If the user has selected only one box
     else if (jtID == "temp" || prID == "temp") {
         alert('Please Select on both Fields!');
     }
+
+    // Now based on selection, the iframe gets the soource of the graph
     else {
 
         if (jtID == "1" && prID == "1") {
@@ -36,9 +48,15 @@ form.addEventListener('submit', (event) => {
             document.getElementById('iFrame').setAttribute('src',"https://app.powerbi.com/reportEmbed?reportId=a75412ab-8708-4911-a4ed-892b6917e3c3&autoAuth=true&ctid=242d5969-d4ad-4e47-9c9c-8af18d85fa02&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9");
         }
 
+        // Lastly 'Please Select you Preference' tab is set to 'display: none'
+        // and iframe element is set to 'display: block'
+
         document.getElementById('number1').style.display = "none";
         document.getElementById('number2').style.display = "block";
     }
 
+    // This prevents the page from redirecting it to some other location
     event.preventDefault();
 });
+
+// END OF 'index.js'

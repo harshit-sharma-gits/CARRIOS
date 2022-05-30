@@ -1,3 +1,4 @@
+/* Importing the font which is used all over the website */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
@@ -6,19 +7,23 @@
     scroll-behavior: smooth;
 }
 
+/* Customized Scroll Bar, to match the application UI */
+
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     background: #dbdbdb;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background: #F13C20;
-  }
+}
 
 body {
     margin: 0px;
 }
+
+/* Navigation bar is made using 'grid' */
 
 .navbar {
     background-color: rgb(231, 231, 231);
@@ -54,6 +59,8 @@ body {
     text-decoration: none;
     color: black;
 }
+
+/* 'grid' again is extensively use throughout the app for its UI */
 
 .landingArea {
     display: grid;
@@ -133,6 +140,8 @@ hr {
     display: none;
 }
 
+/* Styling of footer */
+
 .footer {
     background-color: #F13C20;
     height: 60px;
@@ -149,3 +158,5 @@ hr {
     color: white;
     font-style: bold;
 }
+
+/* END OF 'style.css' */
